@@ -3,13 +3,13 @@ import Profile from './Profile';
 import Statistics from './Statistics';
 import FriendList from './FriendList';
 import TransactionHistory from './TransactionHistory';
-import user from './user.json';
-import statisticalData from './statistical-data.json';
-import friends from './friends.json';
-import transactions from './transactions.json';
-import './Project.scss';
+import user from '../db/user.json';
+import statisticalData from '../db/statistical-data.json';
+import friends from '../db/friends.json';
+import transactions from '../db/transactions.json';
+import './App.scss';
 
-const Project = () => {
+const App = () => {
   return (
     <div className="container">
       <Profile
@@ -26,4 +26,4 @@ const Project = () => {
   );
 };
 
-export default Project;
+export default App;

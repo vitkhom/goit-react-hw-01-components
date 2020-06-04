@@ -7,10 +7,10 @@ const Statistics = ({ title, stats }) => {
   return (
     <Section title={title}>
       <ul className="stat-list">
-        {stats.map(item => (
-          <li className="item" key={item.id}>
-            <span className="label">{item.label}</span>
-            <span className="percentage">{item.percentage}%</span>
+        {stats.map(({ id, label, percentage }) => (
+          <li className="item" key={id}>
+            <span className="label">{label}</span>
+            <span className="percentage">{percentage}%</span>
           </li>
         ))}
       </ul>
